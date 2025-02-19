@@ -1,21 +1,4 @@
 
-<img src="https://lsauer.github.io/res/github/project/csharp-singleton/singularity-icon-64.png" align="right" height="64" />
-## Singleton -  A generic, portable and easy to use Singleton pattern implementation     
-##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for .NET Core / C#
-
-[![Join the chat at https://gitter.im/csharp-singleton/Lobby](https://badges.gitter.im/csharp-singleton/Lobby.svg)](https://gitter.im/csharp-singleton/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
----
-
-**author** | <a href="http://stackexchange.com/users/485574/lo-sauer"><img src="http://stackexchange.com/users/flair/485574.png" width="208" height="58" alt="profile for Lo Sauer on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Lo Sauer on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a>
-:------------ | :------------- 
-**website** | <a href="https://github.com/lsauer/csharp-singleton" target="_blank">https://github.com/lsauer/csharp-singleton</a>
-**license** | <a href="http://lsauer.mit-license.org/" target="_blank">MIT license</a>   
-**current** |  [![Build Status](https://travis-ci.org/lsauer/csharp-singleton.svg?branch=master)](https://travis-ci.org/lsauer/csharp-singleton) [![Build status](https://ci.appveyor.com/api/projects/status/q9aqosp22ufj7wik?svg=true)](https://ci.appveyor.com/project/lsauer/csharp-singleton/) [![Coverage Status](https://img.shields.io/coveralls/bfontaine/badges2svg.svg)](https://ci.appveyor.com/project/lsauer/csharp-singleton/build/tests)
-**package** | <a href="https://www.nuget.org/packages/CSharp.Portable-Singleton/" target="_blank"><img src="https://img.shields.io/nuget/v/CSharp.Portable-Singleton.svg?maxAge=6000"/></a> `PM> Install-Package CSharp.Portable-Singleton`  
-**description** | A generic, portable, documented and easy to use Singleton pattern implementation, to enforce and manage single instances
-**documentation** |  <a href="https://googledrive.com/host/0ByqWUM5YoR35OWFCVHMtVnFiSGM/index.html">complete reference v2.0.0.4</a>
-**suported** | <ul><li><a href="https://en.wikipedia.org/wiki/.NET_Framework#.NET_Core" target="_blank">.NET Core</a></li> <li>.NET Framework 4.5</li> <li>Winows Phone 8.1</li>  <li>Windows 8, 10</li> <li><a href="https://developer.xamarin.com/guides/android/" target="_blank">Xamarin.Android</a></li> <li><a href="https://developer.xamarin.com/guides/ios/" target="_blank">Xamarin.iOS</a></li>  <li>Xamarin.iOS Classic</li><li>XBOX 360 (req. adapations)</li></ul>   
 
 
 ## Table of Contents
