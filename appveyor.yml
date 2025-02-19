@@ -1,0 +1,44 @@
+version: 5.0.0.{build}-beta 
+branches: 
+  only: 
+  - master 
+image: Visual Studio 2015 
+configuration: Release 
+assembly_info: 
+  patch: true 
+  file: '**\AssemblyInfo.*' 
+  assembly_version: '{version}' 
+  assembly_file_version: '{version}' 
+  assembly_informational_version: '{version}' 
+install: 
+- cmd: 
+nuget: 
+  account_feed: true 
+  project_feed: true 
+  disable_publish_on_pr: true 
+before_build: 
+- cmd: nuget restore Singleton.sln
+build: 
+  project: Singleton.sln 
+  publish_nuget: true 
+  publish_nuget_symbols: true 
+  include_nuget_references: true 
+  verbosity: normal 
+after_build: 
+- cmd: >- 
+    7z a Singleton.zip %APPVEYOR_BUILD_FOLDER%\Singleton\bin\Release\*.*
+
+    appveyor PushArtifact Singleton.zip 
+deploy: off 
+notifications: 
+- provider: Email 
+  to: 
+  - lorenz.lo.sauer@gmail.com
+  on_build_success: false 
+  on_build_failure: true 
+  on_build_status_changed: false
+  
+skip_commits:
+
+  # Regex for matching commit message
+  message: /Update.*\.(md)/
